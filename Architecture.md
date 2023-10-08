@@ -3,16 +3,24 @@
 + teach.endeavor.com
 + study.endeavor.com
 
-```mermaid
-sequenceDiagram
-    Browser->>User Service: authentication request
-    User Service-->>Browser: JWT token
-    Browser-->>Another Service: request with JWT token
-```
-
 # User service
 + user admin APIs: create, read, update, delete
 + authentication: JWT
+```mermaid
+sequenceDiagram
+    participant Browser
+    participant User_Service
+    participant Another_Service
+    Browser ->> User_Service: authentication request
+    alt invalid username or password
+        User_Service -->> Browser: Notification of failed authentication
+        Browser ->> Browser: Show failed authentication message
+    else valid username and password
+        User_Service -->> Browser: JWT token
+        Browser ->> Browser: Show student page
+        Browser ->> Another_Service: request with JWT token
+    end
+```
 
 # Admin service
 + user admin APIs
