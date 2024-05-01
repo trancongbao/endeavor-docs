@@ -31,26 +31,26 @@ erDiagram
 ```
 
 ## Add card
-+ add front text
-  + the front text is added to `addCard` request body
-+ select a word/phrase and mark it as new word
-  + `#` is added on both sides of the word
-  + the Suggestion List is shown below 
-    + result populated with `searchWord` (full-text search)
-    + search field can be edited
++ add front text to the `Front` text box
++ select a word/phrase and click the `Add Word to Back` button (below the `Front` text box)
+  + `#` is added on both sides of the word in the front text (for highlighting)
+  + the `Suggestion List` is shown below the `Add Word to Back` button with
+    + search field (editable)
+    + result (populated with `searchWord` full-text search)
   + select one of the suggested words
     + the word is added to `addCard` request body
-  + click the Add New Word
-    + the Add New Word dialog is shown
-    + enter word info and click Add
+  + click the `Add New Word` button instead
+    + the `Add New Word` dialog is shown
+    + enter word info and click `Add`
       + `createWord` is called
       + the word is added to `addCard` request body
 + upload front audio (optional)
   + `uploadAudio` is called
   + the audio_uri is added to `addCard` request body
-+ click Add
++ click `Add`
+  + the front text is added to `addCard` request body
   + `addCard` is called
-    + front text is Sanitize (e.g. html tags are not allowed) to prevent XSS, etc.
+    + front text is sanitized (e.g. html tags are not allowed) to prevent XSS, etc.
     + transaction is created
       + row is added to `card` table
       + rows are added to `card_word` table
