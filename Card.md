@@ -32,9 +32,10 @@ erDiagram
 
 ## Add card
 + Add front text. 
-  + Words/phrases can be selected and marked as new word
-  + New words are surrounded with `#` on both sides
-+ Double-click on a word --> `searchWord` --> show suggestions dialog (full-text search), search field can be edited.
++ Select a word/phrase and mark it as new word
+  + `#` is added on both sides of the word
+  + suggestions dialog is shown with result populated with `searchWord`
+  + show  (full-text search), search field can be edited.
 + Select one of the suggested words --> `addWordToCard`
 + Select Add Word instead --> Add Word Dialog --> `createWord`
 + Optional: upload front audio
