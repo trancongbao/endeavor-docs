@@ -36,3 +36,4 @@ erDiagram
 + Optional: upload front audio --> `updateCard`
 + Double-click on a word --> `searchWord` --> show suggestions (full-text search)
 + Select one of the suggested words --> `addWordToCard`
++ Select Add Word instead --> Add Word Dialog --> `createWord`
