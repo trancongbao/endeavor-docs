@@ -48,6 +48,9 @@ erDiagram
 + upload front audio (optional)
   + `uploadAudio` is called
   + the audio_uri is added to `addCard` request body
-+ click Add --> `addCard`
-  + front text is Sanitize (e.g. html tags are not allowed) to prevent XSS, etc. 
-  + `addWordToCard` is called
++ click Add
+  + `addCard` is called
+    + front text is Sanitize (e.g. html tags are not allowed) to prevent XSS, etc.
+    + transaction is created
+      + row is added to `card` table
+      + rows are added to `card_word` table
