@@ -31,11 +31,12 @@ erDiagram
 ```
 
 ## Add card
-+ Add front text
-+ Words/phrases can be selected marked as new word
-+ New words are surrounded with `#` on both sides
-+ Click create --> `createCard`
-+ Optional: upload front audio --> `updateCard`
++ Add front text. 
+  + Words/phrases can be selected and marked as new word
+  + New words are surrounded with `#` on both sides
 + Double-click on a word --> `searchWord` --> show suggestions dialog (full-text search), search field can be edited.
 + Select one of the suggested words --> `addWordToCard`
 + Select Add Word instead --> Add Word Dialog --> `createWord`
++ Optional: upload front audio
++ Click create --> `createCard`
+    + Sanitize front text to prevent XSS, etc: html tags are not allowed.
