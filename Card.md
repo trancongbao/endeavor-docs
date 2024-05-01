@@ -1,5 +1,6 @@
 # CARD
 
+## Data modeling
 ```mermaid
 erDiagram
   CARD {
@@ -28,3 +29,10 @@ erDiagram
   CARD_WORD ||--o{ WORD : contains
   CARD_WORD ||--o{ CARD : contains
 ```
+
+## Add card
++ Add front text
++ Click create --> `createCard`
++ Optional: upload front audio --> `updateCard`
++ Double-click on a word --> `searchWord` --> show suggestions (full-text search)
++ Select one of the suggested words --> `addWordToCard`
