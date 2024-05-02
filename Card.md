@@ -50,10 +50,13 @@ sequenceDiagram
     FrontEnd ->> User: show Add Card pane (again)
 
     User ->> FrontEnd: click the Add button
-    FrontEnd ->> Backend: createCard
+    FrontEnd ->> Backend: `createCard`
     Backend ->> Backend: sanitize `front_text`, add row in `card` table
-    Backend ->> FrontEnd: `card_id`
+    Backend ->> FrontEnd: `card`
+    FrontEnd ->> Backend: `addWordsToCard`
+    Backend ->> FrontEnd: 200 OK
 
+    FrontEnd ->> User: show Add Card pane
 ```
 
 - user add text to the `Front` text box
