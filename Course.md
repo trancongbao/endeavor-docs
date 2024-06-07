@@ -1,7 +1,16 @@
-# Overview
-Courses are designed by teachers/admins.  
-Courses are ranked based on difficulty.  
-Courses include a set of lessons.  
+[Back to Overview](README.md)
+A __Course__ provides sytematic knowledge and practice in reading, writing, listening, speaking, grammar and vocabulary, for particular topic at a particular English level.
+A course has following characteristics:
+- Created by admin.
+- Have a a set of lessons associated with it.
+- Can be assigned to teachers for modifications.
+- Designed by teachers who are are granted access (by admin).
+- Reviewed and published by admin.
+- Published courses can be assigned to students.
+- Assigned students can study the course.
+- Progress of study is tracked.
+- Courses are ranked based on difficulty.
+
 Lessons are order: all lessons are initially locked except the first one, a lesson is only unlocked if the student has finished (all) the previous lesson(s).  
 Each course also has a corresponding Spaced-Repetition flash-cards decks for reviewing vocabulary and grammar.
 Students need to meet reviewing requirements before they can procceed with new lessons/decks.
